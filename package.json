@@ -1,0 +1,26 @@
+{
+  "name": "hyxcache",
+  "version": "1.11.0",
+  "description": "the web cache of hyxApp generate script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "hyxcache": "bin/hyxcache"
+  },
+  "keywords": [
+    "app",
+    "web",
+    "cache"
+  ],
+  "dependencies": {
+    "commander": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/plusman/hwtechDoc.git"
+  },
+  "author": "plusman <plusmancn@gmail.com>(http://plusman.cn)",
+  "license": "ISC"
+}

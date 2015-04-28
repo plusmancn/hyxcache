@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+// node /Users/plusman/Desktop/Open/npm/cachePackage/bin/hyxcache -p ios
+
+
+var program = require('commander'),
+    fs = require('fs');
+    pwdPath = fs.realpathSync('.');
+    hyxcache = require('../');
+
+// 函数定义
+function cacheBuild(params) {
+
+  var params = params.split('.');
+
+  if (params.length < 2) {
+    console.log('error: missing arguments');
+    return;
+  };
+
+  if (params[0] == 'ios' || params[0] == 'android') {
+    hyxcache.build(params[0],params[1]);
+  }else{
+    console.log('error: not avaliable platform value');
+  }
+}
+
+program
+  .version(hyxcache.version)
+  .option('-p, --platform [type.versionTag]', 'avaliable platform: ios.v4,android.v6,etc',cacheBuild)
+
+program.parse(process.argv);
+
+
+// 默认帮助
+var args = process.argv.slice(3);
+
+if (!args[0]) {
+  process.stdout.write(program.helpInformation());
+};
+
+
