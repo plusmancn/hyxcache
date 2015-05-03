@@ -1,6 +1,6 @@
 {
   "name": "hyxcache",
-  "version": "1.11.1",
+  "version": "1.11.2",
   "description": "the web cache of hyxApp generate script",
   "main": "index.js",
   "scripts": {
