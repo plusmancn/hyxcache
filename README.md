@@ -12,6 +12,26 @@
 
 ---
 ## changeLog
+`1.11.1 | **2015-05-04 00:08**
+    
+* 添加安卓文件头添加列表，强烈建议安卓实现app内加载头尾
+
+    androidWithHead:[
+        'meetingShowDetail.ejs',
+        'meetingEdit.ejs',
+        'meetingShowList.ejs',
+        'userEdit.ejs',
+        'userSignupPhoneNumber.ejs',
+        'userPasswordPhoneNumber.ejs',
+        'contactsReq.ejs',
+        'userNotification.ejs',
+        'meetingEditGuide.ejs',
+        'newFeature.ejs',
+        'contactExchange.ejs',
+        'versionHistory.ejs'
+    ]
+
+
 `1.11.0` | **2015-04-28 11:37**
 
 * 添加版本Tag
