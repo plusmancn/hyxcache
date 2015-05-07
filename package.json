@@ -1,6 +1,6 @@
 {
   "name": "hyxcache",
-  "version": "1.11.2",
+  "version": "1.11.3",
   "description": "the web cache of hyxApp generate script",
   "main": "index.js",
   "scripts": {
@@ -15,12 +15,16 @@
     "cache"
   ],
   "dependencies": {
-    "commander": "*"
+    "commander": "*",
+    "request":"*",
+    "csv":"*",
+    "q":"*"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/plusmancn/hyxcache.git"
   },
   "author": "plusman <plusmancn@gmail.com>(http://plusman.cn)",
-  "license": "ISC"
+  "license": "ISC",
+  "cloudFuncUrl":"http://127.0.0.1" 
 }
